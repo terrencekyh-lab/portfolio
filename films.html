@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Films — Your Name</title>
+  <meta name="description" content="Short films, music videos and documentaries by Your Name." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="nav">
+    <a href="index.html" class="nav__logo">Your Name<span>.</span></a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+    <nav class="nav__links">
+      <a href="films.html" aria-current="page">Films</a>
+      <a href="photography.html">Photography</a>
+      <a href="vlogs.html">Vlogs</a>
+      <a href="achievements.html">Achievements</a>
+    </nav>
+    <div class="rec" aria-hidden="true"><span class="rec__dot"></span>REC</div>
+  </header>
+
+  <!-- ===================== PAGE HEADER ===================== -->
+  <section class="page-hero" id="top">
+    <!-- ✏️ Background still -->
+    <div class="page-hero__bg" style="background-image:url('https://picsum.photos/seed/featuredfilm/1920/1000')"></div>
+    <div class="page-hero__shade"></div>
+    <div class="page-hero__content">
+      <p class="slate">Reel 01 &nbsp;·&nbsp; Now showing</p>
+      <h1>The <em>films</em></h1>
+      <!-- ✏️ A short intro to your filmmaking -->
+      <p class="page-hero__intro">Short films, music videos and documentaries — made with small crews, borrowed lights and a lot of heart.</p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="toolbar reveal">
+      <div class="filters" aria-label="Filter films">
+        <button class="filter is-active" data-filter="all">All</button>
+        <button class="filter" data-filter="short">Short films</button>
+        <button class="filter" data-filter="music">Music videos</button>
+        <button class="filter" data-filter="doc">Documentary</button>
+      </div>
+    </div>
+
+    <!-- ✏️ FEATURED FILM — your best/most recent work -->
+    <article class="featured reveal" data-type="short">
+      <button class="featured__media" data-video="" aria-label="Watch Paper Moons">
+        <img src="https://picsum.photos/seed/featuredfilm/1400/800" alt="Still from Paper Moons" loading="lazy" />
+        <span class="play-big" aria-hidden="true"></span>
+      </button>
+      <div class="featured__info">
+        <p class="tag">Featured · Short film</p>
+        <h3>Paper Moons</h3>
+        <p class="meta">2026 · 12 min · Drama · Writer / Director</p>
+        <p>Two siblings spend their last summer before one of them moves away building a moon out of newspaper on the roof of their apartment block.</p>
+        <p class="note">“Shot over four weekends with a crew of five and a lot of borrowed lights.”</p>
+        <button class="btn btn--primary" data-video=""><span class="play" aria-hidden="true"></span> Watch film</button>
+      </div>
+    </article>
+
+    <!-- ✏️ FILM GRID — copy/paste an <article class="film"> block for each film.
+         data-type must be: short, music or doc (matches the filter buttons) -->
+    <div class="film-grid">
+      <article class="film reveal" data-type="short">
+        <button class="film__poster" data-video="" aria-label="Watch Static">
+          <img src="https://picsum.photos/seed/staticfilm/600/850" alt="Poster for Static" loading="lazy" />
+          <span class="play-big" aria-hidden="true"></span>
+        </button>
+        <h3>Static</h3>
+        <p class="meta">2025 · 7 min · Director, Editor</p>
+        <p>A late-night radio host realises the only caller is himself, ten years older.</p>
+      </article>
+
+      <article class="film reveal" data-type="music">
+        <button class="film__poster" data-video="" aria-label="Watch Neon Tides">
+          <img src="https://picsum.photos/seed/neontides/600/850" alt="Poster for Neon Tides" loading="lazy" />
+          <span class="play-big" aria-hidden="true"></span>
+        </button>
+        <h3>Neon Tides</h3>
+        <p class="meta">2025 · 3 min · Music video · Director, DP</p>
+        <p>A music video for a local band, shot entirely in a 24-hour laundromat.</p>
+      </article>
+
+      <article class="film reveal" data-type="doc">
+        <button class="film__poster" data-video="" aria-label="Watch The Last Projectionist">
+          <img src="https://picsum.photos/seed/projectionist/600/850" alt="Poster for The Last Projectionist" loading="lazy" />
+          <span class="play-big" aria-hidden="true"></span>
+        </button>
+        <h3>The Last Projectionist</h3>
+        <p class="meta">2024 · 15 min · Documentary · Director</p>
+        <p>A portrait of the man who has run my town’s single-screen cinema for 41 years.</p>
+      </article>
+
+      <article class="film reveal" data-type="short">
+        <button class="film__poster" data-video="" aria-label="Watch Sunday Pancakes">
+          <img src="https://picsum.photos/seed/sundaypancakes/600/850" alt="Poster for Sunday Pancakes" loading="lazy" />
+          <span class="play-big" aria-hidden="true"></span>
+        </button>
+        <h3>Sunday Pancakes</h3>
+        <p class="meta">2024 · 4 min · Writer, Director</p>
+        <p>My first “real” short. A breakfast, an argument, and a lot of syrup.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <section class="contact" id="contact">
+      <p class="slate">Fin &nbsp;·&nbsp; EXT. ANYWHERE — DAY</p>
+      <h2 class="contact__title">Let’s make <em>something</em>.</h2>
+      <p class="section__sub">Open to collaborations, crew work, music videos, and anyone who wants to talk about movies for too long.</p>
+      <a class="contact__email" href="mailto:hello@yourname.com">hello@yourname.com</a>
+      <ul class="socials">
+        <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Vimeo</a></li>
+        <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Letterboxd</a></li>
+      </ul>
+    </section>
+    <div class="credits">
+      <p class="credits__fine">© <span class="year"></span> Your Name · <a href="#top">Back to the top ↑</a></p>
+    </div>
+  </footer>
+
+  <div class="modal" id="video-modal" role="dialog" aria-modal="true" aria-label="Video player" hidden>
+    <button class="modal__close" aria-label="Close">×</button>
+    <div class="modal__frame" id="video-frame"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

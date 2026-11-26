@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- ✏️ Change the title + description to your name -->
+  <title>Your Name — Filmmaker</title>
+  <meta name="description" content="Films, photographs and stories by Your Name, an aspiring filmmaker." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ===================== HEADER (same on every page) ===================== -->
+  <header class="nav">
+    <a href="index.html" class="nav__logo">Your Name<span>.</span></a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+    <nav class="nav__links">
+      <a href="films.html">Films</a>
+      <a href="photography.html">Photography</a>
+      <a href="vlogs.html">Vlogs</a>
+      <a href="achievements.html">Achievements</a>
+    </nav>
+    <div class="rec" aria-hidden="true"><span class="rec__dot"></span>REC</div>
+  </header>
+
+  <!-- ===================== SCENE 01 · HERO ===================== -->
+  <section class="hero" id="top">
+    <!-- ✏️ Swap this image for a still from your best film (e.g. "images/hero.jpg") -->
+    <div class="hero__bg" style="background-image:url('https://picsum.photos/seed/cinehero/1920/1080')"></div>
+    <div class="hero__shade"></div>
+    <div class="letterbox letterbox--top"></div>
+    <div class="letterbox letterbox--bottom"></div>
+
+    <div class="hero__content">
+      <p class="slate">Scene 01 &nbsp;·&nbsp; INT. MY HEAD — NIGHT</p>
+      <h1 class="hero__title">Your <em>Name</em></h1>
+      <p class="hero__tagline">
+        Aspiring filmmaker. Chronic noticer of light through windows.<br />
+        I make small films about big feelings.
+      </p>
+      <div class="hero__actions">
+        <!-- ✏️ Paste your showreel embed link in data-video -->
+        <button class="btn btn--primary" data-video="">
+          <span class="play" aria-hidden="true"></span> Watch my showreel
+        </button>
+        <a class="btn btn--ghost" href="films.html">See the films</a>
+      </div>
+    </div>
+
+    <div class="hero__meta">
+      <span>ISO 800 · 24 FPS · f/2.8</span>
+      <span class="timecode" id="timecode">00:00:00:00</span>
+    </div>
+  </section>
+
+  <!-- ===================== SCENE 02 · ABOUT ===================== -->
+  <section class="section about" id="about">
+    <div class="section__head reveal">
+      <p class="slate">Scene 02</p>
+      <h2>The person <em>behind</em> the camera</h2>
+    </div>
+
+    <div class="about__grid">
+      <figure class="about__photo reveal">
+        <!-- ✏️ Your portrait -->
+        <img src="https://picsum.photos/seed/portraitcam/700/900" alt="Portrait of Your Name holding a camera" loading="lazy" />
+        <figcaption>On set, probably asking for “one more take.”</figcaption>
+      </figure>
+
+      <div class="about__text reveal">
+        <!-- ✏️ Rewrite this in YOUR voice — this is where your personality lives -->
+        <p class="lead">
+          I fell in love with film the night I stayed up way too late watching something
+          that made me feel less alone. I’ve been chasing that feeling with a camera ever since.
+        </p>
+        <p>
+          I write, direct, shoot and edit — mostly short films, music videos and the occasional
+          documentary about people I find quietly fascinating. I’m drawn to stories about
+          growing up, small towns, and the moments right before something changes.
+        </p>
+        <p>
+          When I’m not filming, I’m probably taking photos on a camera older than me,
+          over-analysing a movie with friends, or rearranging my room to look like a set.
+        </p>
+
+        <div class="cards">
+          <div class="card">
+            <h3 class="card__label">Currently</h3>
+            <ul class="kv">
+              <li><span>Watching</span> Every film by Wong Kar-wai, in order</li>
+              <li><span>Shooting on</span> Sony a6400 + a 50mm I refuse to replace</li>
+              <li><span>Writing</span> A short about my grandmother’s kitchen</li>
+              <li><span>Learning</span> Colour grading in DaVinci Resolve</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="card__label">Films that made me</h3>
+            <ul class="chips">
+              <li>In the Mood for Love</li>
+              <li>Lady Bird</li>
+              <li>Spirited Away</li>
+              <li>Moonlight</li>
+              <li>Paris, Texas</li>
+              <li>Aftersun</li>
+            </ul>
+            <h3 class="card__label card__label--spaced">Things you should know</h3>
+            <ul class="facts">
+              <li>☕ Runs on iced coffee and deadlines</li>
+              <li>🎧 Edits to the same 3 albums on loop</li>
+              <li>🌅 Will stop mid-sentence for golden hour</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Where to next — links to the other pages (✏️ swap the background images) -->
+    <div class="next">
+      <p class="slate reveal">Coming up next</p>
+      <div class="next__grid">
+        <a class="next__card reveal" href="films.html" style="background-image:url('https://picsum.photos/seed/featuredfilm/600/400')"><span>Reel 01</span><strong>Films</strong></a>
+        <a class="next__card reveal" href="photography.html" style="background-image:url('https://picsum.photos/seed/still03/600/400')"><span>Reel 02</span><strong>Photography</strong></a>
+        <a class="next__card reveal" href="vlogs.html" style="background-image:url('https://picsum.photos/seed/vlog01/600/400')"><span>Reel 03</span><strong>Vlogs</strong></a>
+        <a class="next__card reveal" href="achievements.html" style="background-image:url('https://picsum.photos/seed/stage01/600/400')"><span>Reel 04</span><strong>Achievements</strong></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER (same on every page) ===================== -->
+  <footer class="site-footer">
+    <section class="contact" id="contact">
+      <p class="slate">Fin &nbsp;·&nbsp; EXT. ANYWHERE — DAY</p>
+      <h2 class="contact__title">Let’s make <em>something</em>.</h2>
+      <p class="section__sub">Open to collaborations, crew work, music videos, and anyone who wants to talk about movies for too long.</p>
+      <!-- ✏️ Your email -->
+      <a class="contact__email" href="mailto:hello@yourname.com">hello@yourname.com</a>
+      <!-- ✏️ Your links -->
+      <ul class="socials">
+        <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Vimeo</a></li>
+        <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Letterboxd</a></li>
+      </ul>
+    </section>
+    <div class="credits">
+      <p class="credits__role">Written &amp; Directed by</p><p class="credits__name">Your Name</p>
+      <p class="credits__role">Cinematography</p><p class="credits__name">Also Your Name</p>
+      <p class="credits__role">Catering</p><p class="credits__name">The corner café, mostly</p>
+      <p class="credits__role">Special Thanks</p><p class="credits__name">Mum, for lending the car (and the kitchen)</p>
+      <p class="credits__fine">No cameras were harmed in the making of this website.</p>
+      <p class="credits__fine">© <span class="year"></span> Your Name · <a href="#top">Back to the top ↑</a></p>
+    </div>
+  </footer>
+
+  <!-- Video player popup -->
+  <div class="modal" id="video-modal" role="dialog" aria-modal="true" aria-label="Video player" hidden>
+    <button class="modal__close" aria-label="Close">×</button>
+    <div class="modal__frame" id="video-frame"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
