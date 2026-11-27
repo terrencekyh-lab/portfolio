@@ -183,6 +183,8 @@ The live site updates **1–2 minutes** later. Refresh with **Cmd+Shift+R** if y
 
 GitHub won't accept single files over **100 MB**, which is another reason to keep videos on YouTube.
 
+**If `styles.css` or `script.js` ever changes**, browsers may keep using their old copy for a while and the site looks half-old. To stop that, bump the number at the end of their links on every page (`styles.css?v=2` → `styles.css?v=3`, same for `script.js?v=2`) with **Cmd+Shift+H**. Editing only the `.html` pages doesn't need this.
+
 ---
 
 ## If something breaks
