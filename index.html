@@ -8,7 +8,7 @@
   <meta name="description" content="Films, photographs and stories by Your Name, an aspiring filmmaker." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..600,0..100,0..1;1,9..144,300..600,0..100,0..1&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -24,7 +24,6 @@
       <a href="vlogs.html">Vlogs</a>
       <a href="achievements.html">Achievements</a>
     </nav>
-    <div class="rec" aria-hidden="true"><span class="rec__dot"></span>REC</div>
   </header>
 
   <!-- ===================== SCENE 01 · HERO ===================== -->
@@ -36,39 +35,31 @@
     <div class="letterbox letterbox--bottom"></div>
 
     <div class="hero__content">
-      <p class="slate">Scene 01 &nbsp;·&nbsp; INT. MY HEAD — NIGHT</p>
+      <!-- ✏️ Your name + a short intro about you -->
       <h1 class="hero__title">Your <em>Name</em></h1>
       <p class="hero__tagline">
-        Aspiring filmmaker. Chronic noticer of light through windows.<br />
+        Aspiring filmmaker and chronic noticer of light through windows.
         I make small films about big feelings.
       </p>
-      <div class="hero__actions">
-        <!-- ✏️ Paste your showreel embed link in data-video -->
-        <button class="btn btn--primary" data-video="">
-          <span class="play" aria-hidden="true"></span> Watch my showreel
-        </button>
-        <a class="btn btn--ghost" href="films.html">See the films</a>
-      </div>
-    </div>
-
-    <div class="hero__meta">
-      <span>ISO 800 · 24 FPS · f/2.8</span>
-      <span class="timecode" id="timecode">00:00:00:00</span>
     </div>
   </section>
 
   <!-- ===================== SCENE 02 · ABOUT ===================== -->
   <section class="section about" id="about">
     <div class="section__head reveal">
-      <p class="slate">Scene 02</p>
       <h2>The person <em>behind</em> the camera</h2>
     </div>
 
     <div class="about__grid">
       <figure class="about__photo reveal">
-        <!-- ✏️ Your portrait -->
-        <img src="https://picsum.photos/seed/portraitcam/700/900" alt="Portrait of Your Name holding a camera" loading="lazy" />
-        <figcaption>On set, probably asking for “one more take.”</figcaption>
+        <!-- ✏️ Your 3 photos. The first one is shown on top; click it to fan out all three like a hand of cards -->
+        <button class="deck" aria-expanded="false" aria-label="Fan out more photos of me">
+          <img class="deck__card" src="https://picsum.photos/seed/portraitcam/700/900" alt="Portrait of Your Name holding a camera" loading="lazy" />
+          <img class="deck__card" src="https://picsum.photos/seed/onset22/700/900" alt="Your Name on set" loading="lazy" />
+          <img class="deck__card" src="https://picsum.photos/seed/bts33/700/900" alt="Your Name behind the scenes" loading="lazy" />
+        </button>
+        <figcaption>Jack of all trades, see what’s in my deck.</figcaption>
+        <p class="deck__hint" aria-hidden="true">Tap the photo to deal the cards</p>
       </figure>
 
       <div class="about__text reveal">
@@ -86,41 +77,59 @@
           When I’m not filming, I’m probably taking photos on a camera older than me,
           over-analysing a movie with friends, or rearranging my room to look like a set.
         </p>
-
-        <div class="cards">
-          <div class="card">
-            <h3 class="card__label">Currently</h3>
-            <ul class="kv">
-              <li><span>Watching</span> Every film by Wong Kar-wai, in order</li>
-              <li><span>Shooting on</span> Sony a6400 + a 50mm I refuse to replace</li>
-              <li><span>Writing</span> A short about my grandmother’s kitchen</li>
-              <li><span>Learning</span> Colour grading in DaVinci Resolve</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3 class="card__label">Films that made me</h3>
-            <ul class="chips">
-              <li>In the Mood for Love</li>
-              <li>Lady Bird</li>
-              <li>Spirited Away</li>
-              <li>Moonlight</li>
-              <li>Paris, Texas</li>
-              <li>Aftersun</li>
-            </ul>
-            <h3 class="card__label card__label--spaced">Things you should know</h3>
-            <ul class="facts">
-              <li>☕ Runs on iced coffee and deadlines</li>
-              <li>🎧 Edits to the same 3 albums on loop</li>
-              <li>🌅 Will stop mid-sentence for golden hour</li>
-            </ul>
-          </div>
-        </div>
       </div>
+    </div>
+
+    <!-- ===================== SKILLS ===================== -->
+    <!-- ✏️ One <li class="skill"> per skill. Change the name, the line underneath, and the tools -->
+    <div class="skills">
+      <div class="skills__head reveal">
+        <p class="slate">What I bring to set</p>
+        <h2 class="skills__title">My <em>skills</em></h2>
+      </div>
+      <ul class="skills__grid">
+        <li class="skill reveal">
+          <span class="skill__num">01</span>
+          <h3>Cinematography</h3>
+          <p>Framing, lighting and camera movement that serve the feeling of the scene.</p>
+          <ul class="skill__tools"><li>Canon R7</li><li>Natural light</li><li>Gimbal</li></ul>
+        </li>
+        <li class="skill reveal">
+          <span class="skill__num">02</span>
+          <h3>Editing</h3>
+          <p>Finding the rhythm of a story, cutting for emotion as much as for pace.</p>
+          <ul class="skill__tools"><li>Premiere Pro</li><li>DaVinci Resolve</li></ul>
+        </li>
+        <li class="skill reveal">
+          <span class="skill__num">03</span>
+          <h3>Colour grading</h3>
+          <p>Building a mood and a look, from first-pass correction to the final grade.</p>
+          <ul class="skill__tools"><li>DaVinci Resolve</li><li>LUTs</li></ul>
+        </li>
+        <li class="skill reveal">
+          <span class="skill__num">04</span>
+          <h3>Directing</h3>
+          <p>Working with actors and a small crew to get the take that feels true.</p>
+          <ul class="skill__tools"><li>Shot lists</li><li>Storyboards</li></ul>
+        </li>
+        <li class="skill reveal">
+          <span class="skill__num">05</span>
+          <h3>Screenwriting</h3>
+          <p>Short scripts about growing up, small towns and quiet turning points.</p>
+          <ul class="skill__tools"><li>Final Draft</li><li>WriterSolo</li></ul>
+        </li>
+        <li class="skill reveal">
+          <span class="skill__num">06</span>
+          <h3>Sound</h3>
+          <p>Recording clean dialogue on set and building the soundscape in post.</p>
+          <ul class="skill__tools"><li>Boom mic</li><li>Audition</li><li>Pro Tools</li></ul>
+        </li>
+      </ul>
     </div>
 
     <!-- Where to next — links to the other pages (✏️ swap the background images) -->
     <div class="next">
-      <p class="slate reveal">Coming up next</p>
+      <p class="slate reveal">See my works</p>
       <div class="next__grid">
         <a class="next__card reveal" href="films.html" style="background-image:url('https://picsum.photos/seed/featuredfilm/600/400')"><span>Reel 01</span><strong>Films</strong></a>
         <a class="next__card reveal" href="photography.html" style="background-image:url('https://picsum.photos/seed/still03/600/400')"><span>Reel 02</span><strong>Photography</strong></a>
@@ -133,7 +142,7 @@
   <!-- ===================== FOOTER (same on every page) ===================== -->
   <footer class="site-footer">
     <section class="contact" id="contact">
-      <p class="slate">Fin &nbsp;·&nbsp; EXT. ANYWHERE — DAY</p>
+      <p class="slate">Like what you see?</p>
       <h2 class="contact__title">Let’s make <em>something</em>.</h2>
       <p class="section__sub">Open to collaborations, crew work, music videos, and anyone who wants to talk about movies for too long.</p>
       <!-- ✏️ Your email -->
@@ -141,17 +150,11 @@
       <!-- ✏️ Your links -->
       <ul class="socials">
         <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
-        <li><a href="#" target="_blank" rel="noopener">Vimeo</a></li>
         <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
-        <li><a href="#" target="_blank" rel="noopener">Letterboxd</a></li>
       </ul>
     </section>
     <div class="credits">
-      <p class="credits__role">Written &amp; Directed by</p><p class="credits__name">Your Name</p>
-      <p class="credits__role">Cinematography</p><p class="credits__name">Also Your Name</p>
-      <p class="credits__role">Catering</p><p class="credits__name">The corner café, mostly</p>
-      <p class="credits__role">Special Thanks</p><p class="credits__name">Mum, for lending the car (and the kitchen)</p>
-      <p class="credits__fine">No cameras were harmed in the making of this website.</p>
+      <p class="credits__fine">No lenses were dropped in the making of any films.</p>
       <p class="credits__fine">© <span class="year"></span> Your Name · <a href="#top">Back to the top ↑</a></p>
     </div>
   </footer>

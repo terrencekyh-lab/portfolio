@@ -4,10 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Photography — Your Name</title>
-  <meta name="description" content="Stills and photographs by Your Name." />
+  <meta name="description" content="Event, band, dance, sports and street photography by Your Name." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..600,0..100,0..1;1,9..144,300..600,0..100,0..1&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -23,79 +23,107 @@
       <a href="vlogs.html">Vlogs</a>
       <a href="achievements.html">Achievements</a>
     </nav>
-    <div class="rec" aria-hidden="true"><span class="rec__dot"></span>REC</div>
   </header>
 
-  <!-- ===================== PAGE HEADER ===================== -->
-  <section class="page-hero" id="top">
-    <!-- ✏️ Background photo -->
-    <div class="page-hero__bg" style="background-image:url('https://picsum.photos/seed/still08/1920/1000')"></div>
-    <div class="page-hero__shade"></div>
-    <div class="page-hero__content">
-      <p class="slate">Reel 02 &nbsp;·&nbsp; Stills</p>
-      <h1><em>Photo</em>graphy</h1>
-      <!-- ✏️ A short intro to your photography -->
-      <p class="page-hero__intro">Frames from set, and the photos I take when I’m not rolling. Click any photo to see it full-size.</p>
-    </div>
-  </section>
+<!-- ===================== PAGE HEADER ===================== -->
+<section class="page-hero" id="top">
+  <!-- ✏️ Background photo -->
+  <div class="page-hero__bg" style="background-image:url('https://picsum.photos/seed/still08/1920/1000')"></div>
+  <div class="page-hero__shade"></div>
+  <div class="page-hero__content">
+    <h1><em>Photo</em>graphy</h1>
+    <!-- ✏️ A short intro to your photography -->
+    <p class="page-hero__intro">The photos I take when I’m not rolling — from gig pits and dance floors to finish lines and street corners.</p>
+  </div>
+</section>
 
-  <section class="section section--tight">
-    <div class="toolbar reveal">
-      <!-- ✏️ Rename these categories to suit you. data-filter must match the photos' data-type -->
-      <div class="filters" aria-label="Filter photos">
-        <button class="filter is-active" data-filter="all">All</button>
-        <button class="filter" data-filter="set">On set</button>
-        <button class="filter" data-filter="street">Street</button>
-        <button class="filter" data-filter="portrait">Portraits</button>
-      </div>
-    </div>
+<!-- ===================== GEAR ===================== -->
+<section class="section section--tight">
+  <div class="section__head reveal">
+    <p class="slate">In my bag</p>
+    <h2 class="photo__title">Current <em>gear</em></h2>
+  </div>
+  <!-- ✏️ Your gear. Add or remove <li> lines inside each card -->
+  <div class="gear">
+    <article class="gear__card reveal">
+      <p class="gear__type">Camera</p>
+      <ul class="gear__list">
+        <li><strong>Canon EOS R7</strong><span>APS-C · 32.5 MP · 15 fps</span></li>
+      </ul>
+    </article>
+    <article class="gear__card reveal">
+      <p class="gear__type">Lenses</p>
+      <ul class="gear__list">
+        <li><strong>Canon RF-S 18–150mm f/3.5–6.3</strong><span>Everyday zoom</span></li>
+        <li><strong>Canon RF 50mm f/1.8</strong><span>Low light + portraits</span></li>
+      </ul>
+    </article>
+    <article class="gear__card reveal">
+      <p class="gear__type">Flash</p>
+      <ul class="gear__list">
+        <li><strong>Godox V1</strong><span>Round head · on and off camera</span></li>
+      </ul>
+    </article>
+  </div>
+</section>
 
-    <!-- ✏️ Add/remove <figure> blocks. data-type = category, data-caption = text shown full-screen -->
-    <div class="masonry">
-      <figure class="shot reveal" data-type="set" data-caption="Golden hour, rooftop — Paper Moons (2026)"><img src="https://picsum.photos/seed/still01/800/1100" alt="" loading="lazy" /></figure>
-      <figure class="shot reveal" data-type="set" data-caption="Laundromat at 3am — Neon Tides (2025)"><img src="https://picsum.photos/seed/still02/800/550" alt="" loading="lazy" /></figure>
-      <figure class="shot reveal" data-type="street" data-caption="Street, 35mm film"><img src="https://picsum.photos/seed/still03/800/1000" alt="" loading="lazy" /></figure>
-      <figure class="shot reveal" data-type="set" data-caption="The projection booth — The Last Projectionist (2024)"><img src="https://picsum.photos/seed/still04/800/600" alt="" loading="lazy" /></figure>
-      <figure class="shot reveal" data-type="portrait" data-caption="Portrait, natural light"><img src="https://picsum.photos/seed/still07/800/1000" alt="" loading="lazy" /></figure>
-      <figure class="shot reveal" data-type="street" data-caption="Train window, somewhere"><img src="https://picsum.photos/seed/still06/800/560" alt="" loading="lazy" /></figure>
-      <figure class="shot reveal" data-type="set" data-caption="Behind the scenes, day 3"><img src="https://picsum.photos/seed/still05/800/1050" alt="" loading="lazy" /></figure>
-      <figure class="shot reveal" data-type="street" data-caption="Blue hour, harbour"><img src="https://picsum.photos/seed/still08/800/620" alt="" loading="lazy" /></figure>
-      <figure class="shot reveal" data-type="portrait" data-caption="My best friend, between takes"><img src="https://picsum.photos/seed/still10/800/950" alt="" loading="lazy" /></figure>
-      <figure class="shot reveal" data-type="set" data-caption="Slate, take 14"><img src="https://picsum.photos/seed/still09/800/900" alt="" loading="lazy" /></figure>
-      <figure class="shot reveal" data-type="street" data-caption="Night market"><img src="https://picsum.photos/seed/still11/800/600" alt="" loading="lazy" /></figure>
-      <figure class="shot reveal" data-type="portrait" data-caption="Self-portrait, bathroom mirror, 2am"><img src="https://picsum.photos/seed/still12/800/1000" alt="" loading="lazy" /></figure>
+<!-- ===================== ALBUMS ===================== -->
+<section class="section section--tight albums-section">
+  <div class="section__head reveal">
+    <p class="slate">Pick a set</p>
+    <h2 class="photo__title">The <em>sets</em></h2>
+  </div>
+  <!-- ✏️ Each card opens its own page (photos-event.html, photos-band.html …). Swap the cover images here -->
+  <div class="albums">
+      <a class="album reveal" href="photos-event.html">
+        <img src="https://picsum.photos/seed/evtcover/1200/800" alt="" loading="lazy" />
+        <span class="album__num">01</span>
+        <span class="album__name">Event</span>
+        <span class="album__count">View set →</span>
+      </a>
+      <a class="album reveal" href="photos-band.html">
+        <img src="https://picsum.photos/seed/bandcover/1200/800" alt="" loading="lazy" />
+        <span class="album__num">02</span>
+        <span class="album__name">Band</span>
+        <span class="album__count">View set →</span>
+      </a>
+      <a class="album reveal" href="photos-dance.html">
+        <img src="https://picsum.photos/seed/dnccover/1200/800" alt="" loading="lazy" />
+        <span class="album__num">03</span>
+        <span class="album__name">Dance</span>
+        <span class="album__count">View set →</span>
+      </a>
+      <a class="album reveal" href="photos-sports.html">
+        <img src="https://picsum.photos/seed/sptcover/1200/800" alt="" loading="lazy" />
+        <span class="album__num">04</span>
+        <span class="album__name">Sports</span>
+        <span class="album__count">View set →</span>
+      </a>
+      <a class="album reveal" href="photos-street.html">
+        <img src="https://picsum.photos/seed/strcover/1200/800" alt="" loading="lazy" />
+        <span class="album__num">05</span>
+        <span class="album__name">Street</span>
+        <span class="album__count">View set →</span>
+      </a>
     </div>
-  </section>
+</section>
 
   <!-- ===================== FOOTER ===================== -->
   <footer class="site-footer">
     <section class="contact" id="contact">
-      <p class="slate">Fin &nbsp;·&nbsp; EXT. ANYWHERE — DAY</p>
+      <p class="slate">Like what you see?</p>
       <h2 class="contact__title">Let’s make <em>something</em>.</h2>
       <p class="section__sub">Open to collaborations, crew work, music videos, and anyone who wants to talk about movies for too long.</p>
       <a class="contact__email" href="mailto:hello@yourname.com">hello@yourname.com</a>
       <ul class="socials">
         <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
-        <li><a href="#" target="_blank" rel="noopener">Vimeo</a></li>
         <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
-        <li><a href="#" target="_blank" rel="noopener">Letterboxd</a></li>
       </ul>
     </section>
     <div class="credits">
       <p class="credits__fine">© <span class="year"></span> Your Name · <a href="#top">Back to the top ↑</a></p>
     </div>
   </footer>
-
-  <!-- Photo full-screen view -->
-  <div class="modal" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
-    <button class="modal__close" aria-label="Close">×</button>
-    <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous photo">‹</button>
-    <figure class="lightbox__figure">
-      <img id="lightbox-img" alt="" />
-      <figcaption id="lightbox-cap"></figcaption>
-    </figure>
-    <button class="lightbox__nav lightbox__nav--next" aria-label="Next photo">›</button>
-  </div>
 
   <script src="script.js"></script>
 </body>

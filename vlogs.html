@@ -7,7 +7,7 @@
   <meta name="description" content="Behind-the-scenes vlogs and video diaries by Your Name." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..600,0..100,0..1;1,9..144,300..600,0..100,0..1&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -23,74 +23,101 @@
       <a href="vlogs.html" aria-current="page">Vlogs</a>
       <a href="achievements.html">Achievements</a>
     </nav>
-    <div class="rec" aria-hidden="true"><span class="rec__dot"></span>REC</div>
   </header>
 
   <!-- ===================== PAGE HEADER ===================== -->
   <section class="page-hero" id="top">
-    <!-- ✏️ Background image -->
-    <div class="page-hero__bg" style="background-image:url('https://picsum.photos/seed/vlog01/1920/1000')"></div>
+    <!-- ✏️ Background video: a short, quick-cut montage of your vlog clips.
+         Put the file in a "videos" folder next to this page and keep the name below (or change it).
+         Tips: 10–20 seconds, no sound needed (it plays muted), MP4, under ~10 MB so it loads fast.
+         Until the video exists, the poster image shows instead. -->
+    <video class="page-hero__video" autoplay muted loop playsinline preload="auto"
+           poster="https://picsum.photos/seed/vlog01/1920/1000" aria-hidden="true">
+      <source src="videos/vlog-reel.mp4" type="video/mp4" />
+    </video>
     <div class="page-hero__shade"></div>
     <div class="page-hero__content">
-      <p class="slate">Reel 03 &nbsp;·&nbsp; Behind the scenes</p>
-      <h1>The <em>vlogs</em></h1>
+      <h1>My <em>vlogs</em></h1>
       <!-- ✏️ What your vlogs are about -->
-      <p class="page-hero__intro">Video diaries from set, trips with a camera, and the messy process of figuring out how to make films.</p>
+      <p class="page-hero__intro">The events I’m part of, filmed from the inside — the build-up, the chaos and the people.</p>
     </div>
   </section>
 
-  <section class="section section--tight">
-    <!-- ✏️ LATEST VLOG — your newest episode -->
-    <article class="featured reveal">
-      <button class="featured__media" data-video="" aria-label="Watch the latest vlog">
-        <img src="https://picsum.photos/seed/vlog01/1400/800" alt="Thumbnail for the latest vlog" loading="lazy" />
-        <span class="play-big" aria-hidden="true"></span>
-      </button>
-      <div class="featured__info">
-        <p class="tag">Latest · Ep. 04</p>
-        <h3>Making a short film in 48 hours</h3>
-        <p class="meta">12 Oct 2026 · 14 min</p>
-        <p>A film competition, zero sleep, one broken tripod. Everything that went wrong (and the one thing that went right).</p>
-        <button class="btn btn--primary" data-video=""><span class="play" aria-hidden="true"></span> Watch episode</button>
-      </div>
-    </article>
+  <!-- ===================== WHY I VLOG ===================== -->
+  <!-- ✏️ Write this one in your own voice — it's the most personal part of the site -->
+  <section class="section section--tight why">
+    <div class="why__inner reveal">
+      <p class="slate">A note from me</p>
+      <h2 class="why__title">Why I <em>vlog</em></h2>
+      <p class="why__lead">
+        Films are planned. Vlogs aren’t. That’s exactly why I love them.
+      </p>
+      <p>
+        I started vlogging because so much of what I care about happens off-script — the night before a
+        competition, the walk to the venue, the hug after a performance. None of that ends up in a finished film,
+        but it’s often the part I remember most.
+      </p>
+      <p>
+        Vlogging keeps me honest. There’s no second take and no hiding behind a crew; it’s just me, a camera
+        and whatever the day decides to be. It’s made me a quicker shooter, a better listener and a lot less
+        afraid of pointing a lens at real life.
+      </p>
+      <p>
+        Mostly, these are for the people in them. If you were there, I hope this brings it back.
+      </p>
+      <p class="why__sign">— Your Name</p>
+    </div>
+  </section>
 
-    <!-- ✏️ VLOG GRID — copy/paste an <article class="vlog"> block for each episode -->
+  <section class="section section--tight vlogs-section">
+    <!-- ✏️ ALL VLOGS. One <article class="vlog"> per event: YouTube link in data-video, event name in <h3> -->
     <div class="vlog-grid">
       <article class="vlog reveal">
-        <button class="vlog__thumb" data-video="" aria-label="Watch Ep. 03">
+        <button class="vlog__thumb" data-video="" aria-label="Watch Campus Music Fest">
           <img src="https://picsum.photos/seed/vlog02/800/450" alt="" loading="lazy" />
-          <span class="vlog__ep">Ep. 03</span>
-          <span class="vlog__dur">9:42</span>
           <span class="play-big" aria-hidden="true"></span>
         </button>
-        <h3>What’s in my camera bag</h3>
-        <p class="meta">28 Aug 2026</p>
-        <p>The gear I actually use, and the gear I regret buying.</p>
+        <h3>Campus Music Fest</h3>
       </article>
 
       <article class="vlog reveal">
-        <button class="vlog__thumb" data-video="" aria-label="Watch Ep. 02">
+        <button class="vlog__thumb" data-video="" aria-label="Watch City Marathon">
           <img src="https://picsum.photos/seed/vlog03/800/450" alt="" loading="lazy" />
-          <span class="vlog__ep">Ep. 02</span>
-          <span class="vlog__dur">12:05</span>
           <span class="play-big" aria-hidden="true"></span>
         </button>
-        <h3>Behind the scenes of Paper Moons</h3>
-        <p class="meta">3 Jul 2026</p>
-        <p>Four weekends, five crew members, one paper moon.</p>
+        <h3>City Marathon</h3>
       </article>
 
       <article class="vlog reveal">
-        <button class="vlog__thumb" data-video="" aria-label="Watch Ep. 01">
+        <button class="vlog__thumb" data-video="" aria-label="Watch Dance Showcase Night">
           <img src="https://picsum.photos/seed/vlog04/800/450" alt="" loading="lazy" />
-          <span class="vlog__ep">Ep. 01</span>
-          <span class="vlog__dur">6:30</span>
           <span class="play-big" aria-hidden="true"></span>
         </button>
-        <h3>Why I started filming</h3>
-        <p class="meta">20 May 2026</p>
-        <p>An introduction, a confession, and my very first camera.</p>
+        <h3>Dance Showcase Night</h3>
+      </article>
+
+      <article class="vlog reveal">
+        <button class="vlog__thumb" data-video="" aria-label="Watch Battle of the Bands">
+          <img src="https://picsum.photos/seed/vlog05/800/450" alt="" loading="lazy" />
+          <span class="play-big" aria-hidden="true"></span>
+        </button>
+        <h3>Battle of the Bands</h3>
+      </article>
+
+      <article class="vlog reveal">
+        <button class="vlog__thumb" data-video="" aria-label="Watch Inter-School Games">
+          <img src="https://picsum.photos/seed/vlog06/800/450" alt="" loading="lazy" />
+          <span class="play-big" aria-hidden="true"></span>
+        </button>
+        <h3>Inter-School Games</h3>
+      </article>
+
+      <article class="vlog reveal">
+        <button class="vlog__thumb" data-video="" aria-label="Watch Graduation Night">
+          <img src="https://picsum.photos/seed/vlog07/800/450" alt="" loading="lazy" />
+          <span class="play-big" aria-hidden="true"></span>
+        </button>
+        <h3>Graduation Night</h3>
       </article>
     </div>
   </section>
@@ -98,15 +125,13 @@
   <!-- ===================== FOOTER ===================== -->
   <footer class="site-footer">
     <section class="contact" id="contact">
-      <p class="slate">Fin &nbsp;·&nbsp; EXT. ANYWHERE — DAY</p>
+      <p class="slate">Like what you see?</p>
       <h2 class="contact__title">Let’s make <em>something</em>.</h2>
       <p class="section__sub">Open to collaborations, crew work, music videos, and anyone who wants to talk about movies for too long.</p>
       <a class="contact__email" href="mailto:hello@yourname.com">hello@yourname.com</a>
       <ul class="socials">
         <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
-        <li><a href="#" target="_blank" rel="noopener">Vimeo</a></li>
         <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
-        <li><a href="#" target="_blank" rel="noopener">Letterboxd</a></li>
       </ul>
     </section>
     <div class="credits">

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Event photography — Your Name</title>
+  <meta name="description" content="Event photography by Your Name." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..600,0..100,0..1;1,9..144,300..600,0..100,0..1&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="nav">
+    <a href="index.html" class="nav__logo">Your Name<span>.</span></a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+    <nav class="nav__links">
+      <a href="films.html">Films</a>
+      <a href="photography.html" aria-current="page">Photography</a>
+      <a href="vlogs.html">Vlogs</a>
+      <a href="achievements.html">Achievements</a>
+    </nav>
+  </header>
+
+<!-- ===================== PAGE HEADER ===================== -->
+<section class="page-hero page-hero--short" id="top">
+  <!-- ✏️ Background photo for this set -->
+  <div class="page-hero__bg" style="background-image:url('https://picsum.photos/seed/evtcover/1920/1000')"></div>
+  <div class="page-hero__shade"></div>
+  <div class="page-hero__content">
+    <a class="back-link" href="photography.html">← All photography</a>
+    <h1><em>Events</em></h1>
+    <!-- ✏️ A line about this set -->
+    <p class="page-hero__intro">Launches, weddings, graduations and everything in between — the moments people will want to remember.</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <!-- ✏️ Your photos. One <figure> per photo:
+       put the image path in src (e.g. images/event/01.jpg) and the text shown full-screen in data-caption.
+       Click any photo on the page to view it full-size. -->
+  <div class="masonry">
+      <figure class="shot reveal" data-caption="Event · photo 1"><img src="https://picsum.photos/seed/evt1/800/1100" alt="" loading="lazy" /></figure>
+      <figure class="shot reveal" data-caption="Event · photo 2"><img src="https://picsum.photos/seed/evt2/800/550" alt="" loading="lazy" /></figure>
+      <figure class="shot reveal" data-caption="Event · photo 3"><img src="https://picsum.photos/seed/evt3/800/1000" alt="" loading="lazy" /></figure>
+      <figure class="shot reveal" data-caption="Event · photo 4"><img src="https://picsum.photos/seed/evt4/800/600" alt="" loading="lazy" /></figure>
+      <figure class="shot reveal" data-caption="Event · photo 5"><img src="https://picsum.photos/seed/evt5/800/1000" alt="" loading="lazy" /></figure>
+      <figure class="shot reveal" data-caption="Event · photo 6"><img src="https://picsum.photos/seed/evt6/800/560" alt="" loading="lazy" /></figure>
+      <figure class="shot reveal" data-caption="Event · photo 7"><img src="https://picsum.photos/seed/evt7/800/1050" alt="" loading="lazy" /></figure>
+      <figure class="shot reveal" data-caption="Event · photo 8"><img src="https://picsum.photos/seed/evt8/800/620" alt="" loading="lazy" /></figure>
+      <figure class="shot reveal" data-caption="Event · photo 9"><img src="https://picsum.photos/seed/evt9/800/950" alt="" loading="lazy" /></figure>
+    </div>
+
+  <nav class="more-sets reveal" aria-label="Other sets">
+    <p class="slate">More sets</p>
+    <ul>
+        <li><a href="photos-band.html">Band</a></li>
+        <li><a href="photos-dance.html">Dance</a></li>
+        <li><a href="photos-sports.html">Sports</a></li>
+        <li><a href="photos-street.html">Street</a></li>
+      </ul>
+  </nav>
+</section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <section class="contact" id="contact">
+      <p class="slate">Like what you see?</p>
+      <h2 class="contact__title">Let’s make <em>something</em>.</h2>
+      <p class="section__sub">Open to collaborations, crew work, music videos, and anyone who wants to talk about movies for too long.</p>
+      <a class="contact__email" href="mailto:hello@yourname.com">hello@yourname.com</a>
+      <ul class="socials">
+        <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
+      </ul>
+    </section>
+    <div class="credits">
+      <p class="credits__fine">© <span class="year"></span> Your Name · <a href="#top">Back to the top ↑</a></p>
+    </div>
+  </footer>
+  <!-- Photo full-screen view -->
+  <div class="modal" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <button class="modal__close" aria-label="Close">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous photo">‹</button>
+    <figure class="lightbox__figure">
+      <img id="lightbox-img" alt="" />
+      <figcaption id="lightbox-cap"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" aria-label="Next photo">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
